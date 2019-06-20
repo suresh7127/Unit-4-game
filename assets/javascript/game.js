@@ -15,12 +15,12 @@ console.log(random);
   var crystal = $("<div>");
       crystal.attr({"class": "crystal", "data-random":random
       });
-     /* var images=[
+     var images=[
         "crystal1.jpg",
         "crystal2.jpg",
         "crystal3.jpg",
         "crystal4.jpg"] 
-        */
+        
 $(".crystal").css("background-image", "url(assets/images/crystal1.jpg ");
 $(".crystal").css("background-image", "url(assets/images/crystal2.jpg ");
 $(".crystal").css("background-image", "url(assets/images/crystal3.jpg ");
@@ -36,7 +36,7 @@ $(document).on('click',".crystal", function(){
   var num = parseInt($(this).attr('data-random'));
   previous += num;
 
-  $("previous").html("Total Score:" +previous);
+  $("#previous").html("Total Score:" +previous);
 
   if(previous> random_result){
 loss--;
@@ -49,7 +49,6 @@ resetAndStart ();
 win++;
 $("#win").html("You win:",win);
 previous=0;
-
-resetAndStart ();
   }
 });
+resetAndStart ();
