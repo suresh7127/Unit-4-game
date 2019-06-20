@@ -30,7 +30,7 @@ $("previous").html("Total Score:" +previous);
 
 resetAndStart ();
 $(document).on('click',".crystal", function(){
-  var num = prseInt($(this).attr('data-random'));
+  var num = parseInt($(this).attr('data-random'));
   previous += num;
 
   $("previous").html("Total Score:" +previous);
