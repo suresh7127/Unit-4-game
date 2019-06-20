@@ -40,14 +40,14 @@ $(document).on('click',".crystal", function(){
 
   if(previous> random_result){
 loss--;
-$("#loss").html("You loss:",loss);
+$("#loss").html("You loss:" +loss);
 
 previous=0;
 resetAndStart ();
   }
-  else if(previous = random_result){
+  else if(previous === random_result){
 win++;
-$("#win").html("You win:",win);
+$("#win").html("You win:"+ win);
 previous=0;
   }
 });
