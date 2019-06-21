@@ -6,7 +6,7 @@ var previous = 0;
 var resetAndStart = function (){
   $(".crystals").empty();
   
-random_result = Math.floor(Math.random()*69) +30;
+random_result = Math.floor(Math.random()*101) +19;
 $("#result").html("Random Number:" + random_result);
 
 for(var i=0; i< 4; i++){
@@ -19,7 +19,7 @@ console.log(random);
         "crystal1.jpg",
         "crystal2.jpg",
         "crystal3.jpg",
-        "crystal4.jpg"] 
+        "crystal4.jpg"]; 
         
 $(".crystal").css("background-image", "url(assets/images/crystal1.jpg ");
 $(".crystal").css("background-image", "url(assets/images/crystal2.jpg ");
